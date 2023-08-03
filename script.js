@@ -41,6 +41,10 @@ fetch('https://api.themoviedb.org/3/trending/movie/week', options)
             img.src = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
             img.alt = movie.title;
 
+            img.addEventListener('click', () => {
+                window.location.href = `movie_details.html?id=${movie.id}`;
+            });
+
             posterDiv.appendChild(img);
             slideItem.appendChild(posterDiv);
 

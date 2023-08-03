@@ -57,6 +57,7 @@ body {
     overflow: hidden;
     display: flex;
     height: 500px;
+    cursor: pointer;
 }
 
 .carousel-item {
